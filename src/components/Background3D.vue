@@ -81,7 +81,7 @@ function buildIconGeometry() {
     const ny = dx / len
 
     for (let s = 0; s < STRANDS_PER_STROKE; s++) {
-      const spread = STRANDS_PER_STROKE === 1 ? 0 : s / (STRANDS_PER_STROKE - 1) - 0.5 // -0.5..0.5
+      const spread = s / (STRANDS_PER_STROKE - 1) - 0.5 // -0.5..0.5
       const offset = spread * STROKE_THICKNESS
       const op0: [number, number] = [p0[0] + nx * offset, p0[1] + ny * offset]
       const op1: [number, number] = [p1[0] + nx * offset, p1[1] + ny * offset]
