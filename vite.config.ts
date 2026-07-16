@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     target: 'esnext',
-    sourcemap: false
-    outDir: 'docs',
+    sourcemap: false,
+    outDir: 'docs'
   }
 })
